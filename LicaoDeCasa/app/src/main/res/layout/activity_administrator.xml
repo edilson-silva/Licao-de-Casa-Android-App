@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    tools:context=".view.AdministratorActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/AdministratorActivity_TBLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_margin="@dimen/Margins_Standard">
+            <android.support.v7.widget.SearchView
+                android:id="@+id/AdministratorActivity_SVGetUsers"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/AdministratorActivity_BTNGetAllUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:onClick="getAllUsers"
+                android:text="@string/MainUserADM_Text_BTNSearchAllUsers"
+                android:textColor="@color/color_white" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/AdministratorActivity_LVShowAllUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_black"
+        android:layout_below="@+id/AdministratorActivity_TBLogin" >
+    </ListView>
+
+</LinearLayout>

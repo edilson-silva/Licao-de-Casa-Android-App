@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/common_action_bar_splitter"
+    android:orientation="vertical">
+
+    <!-- LINE 1 -> DATA FROM TASK(QUESTION) VALUE -->
+    <TextView
+        android:id="@+id/single_task_tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/component_cell_srtyle_background"
+        android:text="@string/stask_tv_data_sample_text"
+        android:textSize="12dp"
+        android:gravity="center_vertical" />
+
+    <!-- LINE 2 -> REGISTRATION, DATA AND AVERAGE LABEL -->
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/single_task_tv_data" >
+
+        <Button
+            android:id="@+id/single_task_btn_enable_disable"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_button"
+            android:text="@string/stask_btn_enable_text"
+            android:textColor="@color/color_white"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/single_task_btn_to_view"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/stask_btn_to_view_text"
+            android:textColor="@color/color_white"
+            android:textSize="10dp"
+            android:layout_alignTop="@+id/single_task_btn_enable_disable"
+            android:layout_toLeftOf="@+id/single_task_btn_enable_disable"
+            android:layout_toStartOf="@+id/single_task_btn_enable_disable" />
+
+        <Button
+            android:id="@+id/single_task_btn_to_evaluate"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/stask_btn_to_evaluate_text"
+            android:textColor="@color/color_white"
+            android:textSize="10dp"
+            android:layout_alignTop="@+id/single_task_btn_to_view"
+            android:layout_toLeftOf="@+id/single_task_btn_to_view"
+            android:layout_toStartOf="@+id/single_task_btn_to_view" />
+
+        <Button
+            android:id="@+id/single_task_btn_to_edit"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/stask_btn_to_edit_text"
+            android:textColor="@color/color_white"
+            android:textSize="10dp"
+            android:layout_alignBottom="@+id/single_task_btn_to_evaluate"
+            android:layout_toLeftOf="@+id/single_task_btn_to_evaluate"
+            android:layout_toStartOf="@+id/single_task_btn_to_evaluate" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

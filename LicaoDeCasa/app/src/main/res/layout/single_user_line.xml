@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/SingleUser_IVUserProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserIDLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/SingleUser_IVUserProfileImage"
+        android:textSize="@dimen/TextView_TextSize_Generic"
+        android:text="@string/SingleUser_Text_TVId" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_toRightOf="@+id/SingleUser_TVUserIDLable"
+        android:textSize="@dimen/TextView_TextSize_Generic"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserTypeLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUser_TVUserID"
+        android:layout_alignBottom="@+id/SingleUser_TVUserID"
+        android:layout_centerHorizontal="true"
+        android:text="@string/SingleUser_Text_TVType" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_alignBaseline="@+id/SingleUser_TVUserTypeLable"
+        android:layout_alignBottom="@+id/SingleUser_TVUserTypeLable"
+        android:layout_toRightOf="@+id/SingleUser_TVUserTypeLable"
+        android:text="ADMIN" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUser_TVUserNameLable"
+        android:layout_alignBottom="@+id/SingleUser_TVUserNameLable"
+        android:layout_toRightOf="@+id/SingleUser_TVUserEmailLable"
+        android:text="USER_TEST" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserStateLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_above="@+id/SingleUser_TVUserEmailLable"
+        android:layout_alignLeft="@+id/SingleUser_TVUserType"
+        android:text="@string/SingleUser_Text_TVState" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_alignBaseline="@+id/SingleUser_TVUserStateLable"
+        android:layout_alignBottom="@+id/SingleUser_TVUserStateLable"
+        android:layout_toRightOf="@+id/SingleUser_TVUserStateLable"
+        android:text="ATIVO" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserEmailLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Margins_Top_Standard"
+        android:layout_alignLeft="@+id/SingleUser_TVUserNameLable"
+        android:layout_below="@+id/SingleUser_TVUserNameLable"
+        android:text="@string/SingleUser_Text_TVEmail" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUser_TVUserEmailLable"
+        android:layout_alignBottom="@+id/SingleUser_TVUserEmailLable"
+        android:layout_alignLeft="@+id/SingleUser_TVUserName"
+        android:text="test@test.com" />
+
+    <TextView
+        android:id="@+id/SingleUser_TVUserNameLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Margins_Top_Standard"
+        android:layout_alignLeft="@+id/SingleUser_TVUserIDLable"
+        android:layout_below="@+id/SingleUser_TVUserIDLable"
+        android:text="@string/SingleUser_Text_TVName" />
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.era.licaodecasa"
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //Lib para conexoes a web.
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    //Lib para conexoes acincronas com a web.
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    //compile files('libs/httpclient-4.5.1.jar')
+    //Add para fazer conexao com o HTTPCLIENT -> Depreciado, porem sera utilizado inicialmente
+    //Foi adicionada a Lib do Apache 4.5 dentro do diretorio de "lib", para que o projeto reconhecesse a conexao(Apache).
+    //compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+
+    //Lib referente ao NavigationDrawer - video thiengo. -- lembrar de remover se nao utilizar
+    compile('com.mikepenz:materialdrawer:5.0.0@aar') {
+        transitive = true
+    }
+
+    //RecyclerView Library
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    //CardView  Library
+    compile 'com.android.support:cardview-v7:23.1.0'
+    //GridLayout Library
+    compile 'com.android.support:gridlayout-v7:23.1.0'
+
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+    //Google Volley
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+
+    // Retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    //Gson Converter
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/common_action_bar_splitter"
+    android:orientation="vertical">
+
+    <!-- LINE 1 -> REGISTRATION, DATA AND AVERAGE LABEL -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/ss_tv_registration_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.73"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_data_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_average_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
+
+    <!-- LINE 2 -> REGISTRATION, DATA AND AVERAGE VALUES -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:id="@+id/sstudent_tv_registration"
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_registration_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:id="@+id/sstudent_tv_data"
+            android:layout_width="0dp"
+            android:layout_weight="0.73"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dp"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_data_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/sstudent_tv_average"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dp"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_average_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
+
+    <!-- LINE 3 -> NAME, EMAIL LABEL -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_name_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_email_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
+
+    <!-- LINE 4 -> NAME, EMAIL VALUES -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:id="@+id/sstudent_tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_name_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/sstudent_tv_email"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dp"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/sstudent_tv_email_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+    </TableRow>
+
+</TableLayout>

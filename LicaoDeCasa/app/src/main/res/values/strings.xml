@@ -1,0 +1,174 @@
+<resources>
+    <!-- APP Name -->
+    <string name="app_name">Lição De Casa</string>
+
+    <!-- APP Activities Name Config -->
+    <string name="Title_Activity_Login">Login</string>
+    <string name="Title_Activity_SignUp">Cadastro</string>
+    <string name="Title_Activity_AccountRecovery">Redefinir Senha</string>
+    <string name="Title_Activity_Saudation">Bem Vindo(a)</string>
+    <string name="Title_Activity_Teacher">Professor(a)</string>
+
+    <!-- Strings Login Activity -->
+    <string name="Login_Text_TVTop">Tarefa de Casa</string>
+    <string name="Login_Text_BTNLogin">Login</string>
+    <string name="Login_Text_TVSignUp">Realizar Cadastro.</string>
+    <string name="Login_Text_TVAccountRecover">Esqueceu sua senha?</string>
+    <string name="Login_Text_CBAutomaticLogin">Logar Automaticamente</string>
+
+    <!-- Strings SingUp Activity -->
+    <string name="SingUp_HintText_ETUserName">Nome</string>
+    <string name="SingUp_HintText_ETConfirmPassword">Repita a senha</string>
+    <string name="SingUp_Text_BTNRegister">Cadastrar</string>
+
+    <!-- Strings AccountRecovery Activity -->
+    <string name="AccountRecovery_Text_TVCaptcha">T 3 5 T E 1</string>
+    <string name="AccountRecovery_HintText_ETConfirmCaptcha">Digite o Código aqui</string>
+    <string name="AccountRecovery_Text_BTNRequest">Solicitar</string>
+    <string name="AccountRecovery_Text_TVMakeLogin">Realizar Login.</string>
+
+    <!-- Strings NavigationDrawer -->
+    <string name="NavigationDrawer_TVProfileName">Name Of User</string>
+    <string name="NavigationDrawer_TVProfileEmail">email_of_user@mail.com</string>
+
+    <!-- Strings Teacher Home -->
+    <string-array name="Teacher_TabsValues">
+        <item>TAREFAS ATUAIS</item>
+        <item>NOVA TAREFA</item>
+        <item>ALUNOS</item>
+        <item>DISCIPLINAS ATUAIS</item>
+        <item>NOVA DISCIPLINA</item>
+    </string-array>
+
+    <!--==================================================================-->
+    <!-- Others Componencts - OLD COMPONENTS-->
+    <string name="Teacher_TVStudents">Alunos</string>
+    <string name="Teacher_TVAssessment">Avaliações</string>
+    <!-- Spinner TaskModeValues -->
+    <string-array name="sp_task_mode_values">
+        <item>Tarefas</item>
+        <item>Tarefas Atuais</item>
+        <item>Criar Nova</item>
+    </string-array>
+
+    <!-- Spinner TaskModeValues - OLD COMPONENTS -->
+    <string-array name="sp_teach_mode_values">
+        <item>Lecionar</item>
+        <item>Atuais</item>
+        <item>Definir Nova</item>
+    </string-array>
+
+    <!-- Strings Menu Home -->
+    <string name="HomeMenu_Title_Perfil">Perfil</string>
+    <string name="HomeMenu_Title_Notificationa">Notificações</string>
+    <string name="HomeMenu_Title_Exit">Sair</string>
+    <!--==================================================================-->
+
+    <!-- Strings HintTexts Generics -->
+    <string name="Generic_HintText_ETEmail">SeuEmail@mail.com</string>
+    <string name="Generic_HintText_ETPassword">Senha</string>
+    <string name="Generic_HintText_ETName">Nome</string>
+    <string name="Generic_HintText_SVUsersName">Nome de Usuario ou Nome Completo</string>
+
+    <!-- Strings Texts Generics -->
+    <string name="Generic_Text_Id">ID</string>
+    <string name="Generic_Text_Name">Nome</string>
+    <string name="Generic_Text_Email">Email</string>
+    <string name="Generic_Text_Password">Senha</string>
+    <string name="Generic_Text_Estate">Estado</string>
+    <string name="Generic_Text_Type">Tipo</string>
+    <string name="Generic_Text_Admin">Administrador</string>
+    <string name="Generic_Text_Teacher">Professor</string>
+    <string name="Generic_Text_Resonsible">Responsavel</string>
+    <string name="Generic_Text_Student">Estudante</string>
+    <string name="Generic_Text_UserBanned">Banido</string>
+    <string name="Generic_Text_UserActive">Ativo</string>
+    <string name="Generic_Text_UserInactive">Inativo</string>
+    <string name="Generic_Text_Update">Salvar</string>
+    <string name="Generic_Text_Delete">Excluir</string>
+    <string name="Generic_Text_CancelExit">Cancelar/Sair</string>
+
+    <!-- Navigation Drawer Itens - VideoThiengo -->
+    <string-array name="drawer_list_items">
+        <item>Início</item>
+        <item>Perfil</item>
+        <item>Notificações</item>
+        <item>Sair</item>
+    </string-array>
+
+    <!-- Navigation Drawer Itens -->
+    <string name="NavigationDrawer_MIAppHome">Início</string>
+    <string name="NavigationDrawer_MIProfile">Perfil</string>
+    <string name="NavigationDrawer_MINotifications">Notificações</string>
+    <string name="NavigationDrawer_MIExit">Sair</string>
+
+    <!-- Strings Main/ADM User Activity -->
+    <string name="MainUserADM_Text_TVSearch">Consultar</string>
+    <string name="MainUserADM_Text_TVUsers">Usuarios</string>
+    <string name="MainUserADM_Text_TVTools">Ferramentas</string>
+    <string name="MainUserADM_Text_BTNSearchAllUsers"> Buscar Todos </string>
+
+    <!-- Strings SingleUser Layout -->
+    <string name="SingleUser_Text_TVId">ID:</string>
+    <string name="SingleUser_Text_TVName">NOME:</string>
+    <string name="SingleUser_Text_TVEmail">EMAIL:</string>
+    <string name="SingleUser_Text_TVType">TIPO:</string>
+    <string name="SingleUser_Text_TVState">ESTADO:</string>
+
+    <!-- Strings App Constants -->
+    <string name="SERVER_URL">http://192.168.25.16/action/</string>
+    <string name="title_activity_sign_up">Cadastro</string>
+    <string name="title_activity_account_recovery">Recuperação de Conta</string>
+    <string name="title_activity_main_adm">MainAdm</string>
+    <string name="title_activity_main_main_student">MainStudent</string>
+    <string name="title_activity_main_main_teacher">MainTeacher</string>
+    <string name="title_activity_main_main_responsible">MainResponsible</string>
+
+    <!-- Strings Meus Alunos (single_student_line.xml) -->
+    <string name="ss_tv_registration_text">MAT</string>
+    <string name="ss_tv_school_text">ESCOLA</string>
+    <string name="steaching_tv_course_text">CURSO</string>
+    <string name="ss_tv_serie_text">SÉRIE</string>
+    <string name="steaching_tv_class_text">TURMA</string>
+    <string name="steaching_tv_discipline_text">DISCIPLINA</string>
+    <string name="sstudent_tv_name_text">NOME</string>
+    <string name="sstudent_tv_email_text">EMAIL</string>
+    <string name="sstudent_tv_average_text">MÉDIA</string>
+    <string name="sstudent_tv_data_text">DADOS</string>
+
+    <string name="sstudent_tv_registration_sample_text">00</string>
+    <string name="ss_tv_school_sample_text">Ninja School</string>
+    <string name="ss_tv_course_sample_text">Tecnico em Ninjutsu</string>
+    <string name="ss_tv_serie_sample_text">9ª Série</string>
+    <string name="ss_tv_class_sample_text">X</string>
+    <string name="ss_tv_discipline_sample_text">Queda de Braço</string>
+    <string name="sstudent_tv_name_sample_text">José Aluno</string>
+    <string name="sstudent_tv_email_sample_text">jose_aluno@test.com</string>
+    <string name="sstudent_tv_average_sample_text">99</string>
+    <string name="sstudent_tv_data_sample_text">Escola: Escola T\u00e9cnica de Maracana\u00fa, Curso: Administra\u00e7\u00e3o, Turma: A</string>
+
+    <!-- String Teacher, Set New Teach -->
+    <string name="tf_tsn_tv_school_text">Escola</string>
+    <string name="tf_tsn_tv_discipline_text">Disciplina</string>
+    <string name="tf_tsn_sp_school_hint_text">Selecione a Escola</string>
+    <string name="tf_tsn_sp_discipline_hint_text">Selecione a Disciplina</string>
+    <string name="tf_tsn_btn_set_text">DEFINIR</string>
+
+    <!-- String Teacher, Listar Lecionando. (single_teaching_line.xml). st_tv_school_text -->
+    <string name="steaching_tv_school_sample_text">Escola Tecnica de Maracanau</string>
+    <string name="steaching_tv_course_sample_text">Tecnico em Informatica</string>
+    <string name="steaching_tv_class_sample_text">A</string>
+    <string name="st_tv_discipline_sample_text">Logica</string>
+    <string name="steaching_tv_school_text">Escola</string>
+    <string name="st_tv_course_text">Curso</string>
+    <string name="st_tv_class_text">Turma</string>
+    <string name="st_tv_discipline_text">Disciplina</string>
+
+    <!-- String Teacher, Listar Lecionando. (single_teaching_line.xml). st_tv_school_text -->
+    <string name="stask_tv_data_sample_text">Tarefa de Matemática definida em: 02-03-2016 ( 15:03 ) - Data de encerramento: 02-04-2016 ( 15:00 )</string>
+    <string name="stask_btn_enable_text">Habilitar</string>
+    <string name="stask_btn_to_view_text">Visualizar</string>
+    <string name="stask_btn_to_evaluate_text">Avaliar</string>
+    <string name="stask_btn_to_edit_text">Editar</string>
+
+</resources>

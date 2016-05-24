@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".view.AccountRecoveryActivity">
+
+    <!-- Incluindo a Toolbar que sera padrao para quase todos os usuarios -->
+    <include
+        android:id="@+id/Teacher_IncludeTBTeacher"
+        layout="@layout/frame_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_marginRight="@dimen/Margins_Standard"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/AccountRecovery_ETUserEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/EditText_Height_Standard"
+            android:hint="@string/Generic_HintText_ETEmail"
+            android:textSize="@dimen/EditText_TextSize_Standard"
+            android:textColor="@color/color_black"
+            android:ems="10"
+            android:inputType="textEmailAddress">
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/AccountRecovery_BTNRequest"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Button_Height_Standard"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="sendEmailToRecovery"
+            android:text="@string/AccountRecovery_Text_BTNRequest"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/Button_TextSize_Standard" />
+
+        <TextView
+            android:id="@+id/AccountRecovery_TVMakeLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="makeLogin"
+            android:text="@string/AccountRecovery_Text_TVMakeLogin"
+            android:textColor="@color/color_blue_text_link"
+            android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen> -->
+
+    <!-- Background Size. -->
+    <dimen name="Background_TopLogin">70dp</dimen>
+
+    <!-- TextView. -->
+    <dimen name="TextView_TextSize_Generic">16sp</dimen>
+    <dimen name="TextView_TextSize_Standard">30sp</dimen>
+
+    <!-- Spinner. -->
+    <dimen name="Spinner_Height_Standard">40sp</dimen>
+    <dimen name="Spinner_TextSize_Standard">18sp</dimen>
+
+    <!-- EditText. -->
+    <dimen name="EditText_Height_Standard">45sp</dimen>
+    <dimen name="EditText_TextSize_Standard">18sp</dimen>
+
+    <!-- Button. -->
+    <dimen name="Button_Height_Standard">40dp</dimen>
+    <dimen name="Button_TextSize_Standard">18sp</dimen>
+
+    <!-- Margins. -->
+    <dimen name="Margins_Standard">10dp</dimen>
+    <dimen name="Margins_Top_Standard">2dp</dimen>
+
+</resources>

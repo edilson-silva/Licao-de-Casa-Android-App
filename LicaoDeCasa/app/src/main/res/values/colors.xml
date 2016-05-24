@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MyTheme Colors -->
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorWindowBackground">@color/color_white</color>
+    <color name="colorControlHighlight">#C8009688</color>
+    <color name="colorControlActivated">#C8009688</color>
+    <color name="colorControlNormal">#B6B6B6</color>
+    <color name="colorTextIcons">@color/color_white</color>
+    <color name="colorStatusBar">@color/colorPrimaryDark</color>
+    <color name="colorNavigationBar">@color/colorPrimaryDark</color>
+    <color name="colorDivider">@color/colorControlNormal</color>
+
+    <!-- ToolbarTheme Colors -->
+    <color name="colorToolbarPrimaryColor">@color/colorPrimaryDark</color>
+    <color name="colorToolbarTextIcons">@color/color_white</color>
+    <color name="colorToolbarAccentColor">@color/color_white</color>
+
+    <!-- Others Colors for generic components -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_blue_text_link">#337AB7</color>
+
+</resources>

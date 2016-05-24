@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/SingleUserFragment_TVUserIDLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_marginTop="@dimen/Margins_Standard"
+        android:text="@string/SingleUser_Text_TVId"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <TextView
+        android:id="@+id/SingleUserFragment_TVUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUserFragment_TVUserIDLable"
+        android:layout_alignBottom="@+id/SingleUserFragment_TVUserIDLable"
+        android:layout_alignLeft="@+id/SingleUserFragment_ETUserName"
+        android:text="@string/SingleUser_Text_TVId"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <TextView
+        android:id="@+id/SingleUserFragment_TVUserNameLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SingleUserFragment_TVUserIDLable"
+        android:layout_below="@+id/SingleUserFragment_TVUserIDLable"
+        android:layout_marginTop="@dimen/Margins_Standard"
+        android:text="@string/SingleUser_Text_TVName"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <EditText
+        android:id="@+id/SingleUserFragment_ETUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUserFragment_TVUserNameLable"
+        android:layout_alignBottom="@+id/SingleUserFragment_TVUserNameLable"
+        android:layout_marginRight="@dimen/Margins_Standard"
+        android:layout_toRightOf="@+id/SingleUserFragment_TVUserNameLable"
+        android:ems="10"
+        android:hint="@string/Generic_HintText_ETName"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <TextView
+        android:id="@+id/SingleUserFragment_TVUserEmailLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SingleUserFragment_TVUserNameLable"
+        android:layout_below="@+id/SingleUserFragment_ETUserName"
+        android:layout_marginTop="@dimen/Margins_Standard"
+        android:text="@string/SingleUser_Text_TVEmail"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <EditText
+        android:id="@+id/SingleUserFragment_ETUserEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SingleUserFragment_TVUserEmailLable"
+        android:layout_alignBottom="@+id/SingleUserFragment_TVUserEmailLable"
+        android:layout_marginRight="@dimen/Margins_Standard"
+        android:layout_toRightOf="@+id/SingleUserFragment_TVUserEmailLable"
+        android:hint="@string/Generic_HintText_ETEmail"
+        android:textSize="@dimen/TextView_TextSize_Generic" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/SinleUserFragment_TVUserTypeLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SingleUserFragment_TVUserEmailLable"
+        android:layout_below="@+id/SingleUserFragment_TVUserEmailLable"
+        android:layout_marginTop="@dimen/Margins_Standard"
+        android:text="@string/SingleUser_Text_TVType"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <RadioGroup
+        android:id="@+id/SinleUserFragment_RGUserType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SinleUserFragment_TVUserTypeLable"
+        android:layout_below="@+id/SinleUserFragment_TVUserTypeLable"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:textSize="@dimen/TextView_TextSize_Generic" >
+
+        <RadioButton
+            android:id="@+id/radioGroupTypeItem0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Generic_Text_Admin" />
+
+        <RadioButton
+            android:id="@+id/radioGroupTypeItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Generic_Text_Teacher" />
+
+        <RadioButton
+            android:id="@+id/radioGroupTypeItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Generic_Text_Student" />
+
+        <RadioButton
+            android:id="@+id/radioGroupTypeItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Generic_Text_Resonsible" />
+    </RadioGroup>
+
+	<TextView
+        android:id="@+id/SingleUserFragment_GVUserState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SinleUserFragment_RGUserState"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/SinleUserFragment_RGUserType"
+        android:text="@string/SingleUser_Text_TVState"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+    
+    <RadioGroup
+        android:id="@+id/SinleUserFragment_RGUserState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_alignLeft="@+id/SingleUserFragment_GVUserState"
+        android:layout_alignTop="@+id/SinleUserFragment_RGUserType" >
+
+        <RadioButton
+            android:id="@+id/radioGroupStateItem0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Generic_Text_UserActive" />
+
+        <RadioButton
+            android:id="@+id/radioGroupStateItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Generic_Text_UserInactive" />
+
+        <RadioButton
+            android:id="@+id/radioGroupStateItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Generic_Text_UserBanned" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/SingleUserFragment_BTNUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SinleUserFragment_TVUserTypeLable"
+        android:layout_below="@+id/SinleUserFragment_RGUserType"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/SingleUserFragment_GVUserState"
+        android:background="@drawable/rounded_button"
+        android:onClick="fragmentUserUpdate"
+        android:text="@string/Generic_Text_Update"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <Button
+        android:id="@+id/SingleUserFragment_BTNDelete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SingleUserFragment_ETUserEmail"
+        android:layout_alignTop="@+id/SingleUserFragment_BTNUpdate"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_toRightOf="@+id/SingleUserFragment_BTNUpdate"
+        android:background="@drawable/rounded_button"
+        android:onClick="fragmentUserDelete"
+        android:text="@string/Generic_Text_Delete"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    <Button
+        android:id="@+id/SingleUserFragment_BTNCancelExit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SingleUserFragment_BTNUpdate"
+        android:layout_alignRight="@+id/SingleUserFragment_BTNDelete"
+        android:layout_below="@+id/SingleUserFragment_BTNUpdate"
+        android:layout_marginTop="@dimen/Margins_Standard"
+        android:background="@drawable/rounded_button"
+        android:onClick="fragmentUserCancelExit"
+        android:text="@string/Generic_Text_CancelExit"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/TextView_TextSize_Generic" />
+
+</RelativeLayout>

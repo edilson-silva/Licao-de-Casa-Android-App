@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".view.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_marginRight="@dimen/Margins_Standard"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <!--Layout Schools-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/spinner_border_style"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/tf_teach_setnew_sp_schools"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:spinnerMode="dropdown"
+                android:contextClickable="false">
+                <requestFocus/>
+            </Spinner>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/dropdown" />
+
+        </RelativeLayout>
+
+        <!--Layout Courses - So tera altura igual a wrap_content se escola selecionada tiver algum curso-->
+        <RelativeLayout
+            android:id="@+id/tf_teach_setnew_rl_courses"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/spinner_border_style"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/tf_teach_setnew_sp_courses"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/dropdown" />
+
+        </RelativeLayout>
+
+        <!--Layout Courses - So tera altura igual a wrap_content se escola selecionada tiver algum curso-->
+        <RelativeLayout
+            android:id="@+id/tf_teach_setnew_rl_teams"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/spinner_border_style"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/tf_teach_setnew_sp_teams"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/dropdown" />
+
+        </RelativeLayout>
+
+        <!--Layout Disciplines-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="@dimen/Margins_Standard"
+            android:background="@drawable/spinner_border_style"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/tf_teach_setnew_sp_disciplines"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/dropdown" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tf_teach_setnew_btn_set_new"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Button_Height_Standard"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="loginValidate"
+            android:text="@string/tf_tsn_btn_set_text"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/Button_TextSize_Standard" />
+
+    </LinearLayout>
+
+</RelativeLayout>

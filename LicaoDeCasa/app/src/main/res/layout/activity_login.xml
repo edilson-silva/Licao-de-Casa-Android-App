@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".view.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/LoginActivity_TBLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/Margins_Standard"
+        android:layout_marginRight="@dimen/Margins_Standard"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Login_ETUserEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/EditText_Height_Standard"
+            android:hint="@string/Generic_HintText_ETEmail"
+            android:textSize="@dimen/EditText_TextSize_Standard"
+            android:inputType="textEmailAddress">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/Login_ETUserPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/EditText_Height_Standard"
+            android:layout_marginTop="10dp"
+            android:hint="@string/Generic_HintText_ETPassword"
+            android:textSize="@dimen/EditText_TextSize_Standard"
+            android:inputType="textPassword"
+            android:ems="10"/>
+
+        <CheckBox
+            android:id="@+id/Login_CBAutomaticLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="@string/Login_Text_CBAutomaticLogin"
+            android:textColor="@color/color_blue_text_link"
+            android:checked="false"
+            android:textSize="@dimen/TextView_TextSize_Generic" />
+
+        <Button
+            android:id="@+id/Login_BTNLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Button_Height_Standard"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="loginValidate"
+            android:text="@string/Login_Text_BTNLogin"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/Button_TextSize_Standard" />
+
+        <TextView
+            android:id="@+id/Login_TVSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:duplicateParentState="false"
+            android:longClickable="false"
+            android:onClick="makeRegister"
+            android:text="@string/Login_Text_TVSignUp"
+            android:textColor="@color/color_blue_text_link"
+            android:textSize="@dimen/TextView_TextSize_Generic" />
+
+        <TextView
+            android:id="@+id/Login_TVAccountRecover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:onClick="forgotPassword"
+            android:text="@string/Login_Text_TVAccountRecover"
+            android:textColor="@color/color_blue_text_link"
+            android:textSize="@dimen/TextView_TextSize_Generic" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

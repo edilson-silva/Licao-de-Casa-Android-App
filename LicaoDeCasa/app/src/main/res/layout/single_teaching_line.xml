@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/common_action_bar_splitter"
+    android:orientation="vertical">
+
+    <!-- LINE 1 -> SCHOOL LABEL -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_school_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
+
+    <!-- LINE 2 -> SCHOOL VALUE -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:id="@+id/steaching_tv_school"
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_school_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+    </TableRow>
+
+    <!-- LINE 3 -> COURSE, CLASS AND DISCIPLINE LABELS -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.42"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_course_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.18"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_class_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_discipline_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
+
+    <!-- LINE 4 -> COURSE, CLASS AND DISCIPLINE LABELS -->
+    <TableRow
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-2dp" >
+
+        <TextView
+            android:id="@+id/steaching_tv_course"
+            android:layout_width="0dp"
+            android:layout_weight="0.42"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_course_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/steaching_tv_class"
+            android:layout_width="0dp"
+            android:layout_weight="0.18"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/steaching_tv_class_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:id="@+id/steaching_tv_discipline"
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:layout_marginLeft="-2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/component_cell_srtyle_background"
+            android:text="@string/st_tv_discipline_sample_text"
+            android:textSize="12dp"
+            android:gravity="center_vertical" />
+
+    </TableRow>
+
+</TableLayout>
